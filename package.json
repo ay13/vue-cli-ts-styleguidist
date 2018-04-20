@@ -1,17 +1,21 @@
 {
-  "name": "ur_one",
+  "name": "vue_cli_ts_styleguidist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
-    "lint": "vue-cli-service lint"
+    "test:watch": "vue-cli-service test --watch",
+    "lint": "vue-cli-service lint",
+    "styleguide": "vue-styleguidist server --verbose",
+    "styleguide:build": "vue-styleguidist build"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1",
+    "vue-styleguidist": "^1.7.3",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
