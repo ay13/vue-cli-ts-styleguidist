@@ -27,7 +27,7 @@ export default Vue.extend({
     },
   },
   computed: {
-    styles() {
+    styles(): any {
       return {
         color: this.color,
         background: this.background,
@@ -44,7 +44,7 @@ export default Vue.extend({
      * @event gator
      * @type {Event}
      */
-    handleClick(e) {
+    handleClick(e: any) {
       this.$emit('click', e);
     },
   },
@@ -59,7 +59,7 @@ This button is amazing, use it responsibly.
 Orange button:
 
 ```jsx
-<app-button color="orange">Push Me</app-button>
+<app-button color="red">Push Me</app-button>
 ```
 
 Ugly button with pink font and blue background:
